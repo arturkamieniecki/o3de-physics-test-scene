@@ -1,0 +1,2576 @@
+{
+    "ContainerEntity": {
+        "Id": "ContainerEntity",
+        "Name": "urMoveIt",
+        "Components": {
+            "EditorDisabledCompositionComponent": {
+                "$type": "EditorDisabledCompositionComponent",
+                "Id": 6032689904943590298
+            },
+            "EditorEntityIconComponent": {
+                "$type": "EditorEntityIconComponent",
+                "Id": 15154949737353513908
+            },
+            "EditorEntitySortComponent": {
+                "$type": "EditorEntitySortComponent",
+                "Id": 3011915737855585933,
+                "Child Entity Order": [
+                    "Instance_[1932211731436]/ContainerEntity"
+                ]
+            },
+            "EditorInspectorComponent": {
+                "$type": "EditorInspectorComponent",
+                "Id": 1197986954270485394
+            },
+            "EditorLockComponent": {
+                "$type": "EditorLockComponent",
+                "Id": 17377590078941496771
+            },
+            "EditorOnlyEntityComponent": {
+                "$type": "EditorOnlyEntityComponent",
+                "Id": 9101829160876608437
+            },
+            "EditorPendingCompositionComponent": {
+                "$type": "EditorPendingCompositionComponent",
+                "Id": 1605613233878471279
+            },
+            "EditorPrefabComponent": {
+                "$type": "EditorPrefabComponent",
+                "Id": 6257266250700790229
+            },
+            "EditorVisibilityComponent": {
+                "$type": "EditorVisibilityComponent",
+                "Id": 8328039950281807543
+            },
+            "TransformComponent": {
+                "$type": "{27F1E1A1-8D9D-4C3B-BD3A-AFB9762449C0} TransformComponent",
+                "Id": 4926775927433296427,
+                "Parent Entity": ""
+            }
+        }
+    },
+    "Instances": {
+        "Instance_[1932211731436]": {
+            "Source": "Assets/Importer/urBot.prefab",
+            "Patches": [
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Name",
+                    "value": "urMoveIt"
+                },
+                {
+                    "op": "replace",
+                    "path": "/ContainerEntity/Components/TransformComponent/Parent Entity",
+                    "value": "../ContainerEntity"
+                },
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[1940801666028]/Components/EditorDisabledCompositionComponent/DisabledComponents",
+                    "value": {
+                        "EditorRigidBodyComponent": {
+                            "$type": "EditorRigidBodyComponent",
+                            "Id": 6604956201262750324,
+                            "Configuration": {
+                                "name": "",
+                                "position": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                ],
+                                "orientation": [
+                                    0.0,
+                                    0.0,
+                                    0.0,
+                                    1.0
+                                ],
+                                "entityId": "",
+                                "startSimulationEnabled": true,
+                                "Kinematic": false,
+                                "Initial linear velocity": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                ],
+                                "Initial angular velocity": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                ],
+                                "Linear damping": 0.05000000074505806,
+                                "Angular damping": 0.15000000596046448,
+                                "Sleep threshold": 0.004999999888241291,
+                                "Start Asleep": false,
+                                "Interpolate Motion": false,
+                                "Gravity Enabled": true,
+                                "CCD Enabled": false,
+                                "Compute Mass": false,
+                                "Lock Linear X": false,
+                                "Lock Linear Y": false,
+                                "Lock Linear Z": false,
+                                "Lock Angular X": false,
+                                "Lock Angular Y": false,
+                                "Lock Angular Z": false,
+                                "Mass": 0.18790000677108765,
+                                "Compute COM": false,
+                                "Centre of mass offset": [
+                                    0.0,
+                                    0.0,
+                                    -0.015250000171363354
+                                ],
+                                "Compute inertia": false,
+                                "Inertia tensor": [
+                                    0.00008062472625169903,
+                                    0.0,
+                                    0.0,
+                                    0.0,
+                                    0.00008062472625169903,
+                                    0.0,
+                                    0.0,
+                                    0.0,
+                                    0.00013211718760430813
+                                ],
+                                "Maximum Angular Velocity": 100.0,
+                                "Include All Shapes In Mass": false,
+                                "CCD Min Advance": 0.15000000596046448,
+                                "CCD Friction": false,
+                                "Open PhysX Configuration": false,
+                                "Debug Draw Center of Mass": false
+                            },
+                            "PhysXSpecificConfiguration": {
+                                "SolverPositionIterations": 40,
+                                "SolverVelocityIterations": 10
+                            }
+                        }
+                    }
+                },
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[1940801666028]/Components/EditorPendingCompositionComponent/PendingComponents",
+                    "value": {
+                        "EditorHingeJointComponent": {
+                            "$type": "EditorHingeJointComponent",
+                            "Id": 3119373848356673745,
+                            "Configuration": {
+                                "Local Position": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                ],
+                                "Local Rotation": [
+                                    0.0,
+                                    -89.99999237060547,
+                                    0.0
+                                ],
+                                "Fix Joint Location": false,
+                                "Parent Entity": "Entity_[1957981535212]",
+                                "Child Entity": "Entity_[1940801666028]",
+                                "Breakable": false,
+                                "Maximum Force": 1.0,
+                                "Maximum Torque": 1.0,
+                                "Display Debug": 1,
+                                "Select Lead on Snap": true,
+                                "Self Collide": false
+                            },
+                            "Angular Limit": {
+                                "Standard Limit Configuration": {
+                                    "Name": "",
+                                    "Is Limited": true,
+                                    "Is Soft Limit": false,
+                                    "Tolerance": 0.10000000149011612,
+                                    "Damping": 20.0,
+                                    "Stiffness": 100.0
+                                },
+                                "Positive Limit": 360.0,
+                                "Negative Limit": -360.0
+                            },
+                            "Motor": {
+                                "UseMotor": false,
+                                "ForceLimit": 1.0
+                            },
+                            "Component Mode": {}
+                        }
+                    }
+                },
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[1940801666028]/Components/ROS2FrameComponent/m_template/Namespace Configuration/Namespace Strategy",
+                    "value": 1
+                },
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[1940801666028]/Components/ROS2FrameComponent/m_template/Publish Transform",
+                    "value": false
+                },
+                {
+                    "op": "add",
+                    "path": "/Entities/Entity_[1940801666028]/Components/EditorArticulationLinkComponent",
+                    "value": {
+                        "$type": "EditorArticulationLinkComponent",
+                        "Id": 7739602350805477274,
+                        "ArticulationConfiguration": {
+                            "name": "",
+                            "position": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "orientation": [
+                                0.0,
+                                0.0,
+                                0.0,
+                                1.0
+                            ],
+                            "entityId": "",
+                            "startSimulationEnabled": true,
+                            "Fixed Base": false,
+                            "Self Collide": false,
+                            "Mass": 1.0,
+                            "Gravity Enabled": true,
+                            "Linear damping": 0.05000000074505806,
+                            "Angular damping": 0.15000000596046448,
+                            "Sleep threshold": 0.004999999888241291,
+                            "Start Asleep": false,
+                            "Centre of mass offset": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "Maximum Angular Velocity": 100.0,
+                            "SolverPositionIterations": 4,
+                            "SolverVelocityIterations": 1,
+                            "Articulation Joint Type": 1,
+                            "Local Position": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "Local Rotation": [
+                                0.0,
+                                -90.0,
+                                0.0
+                            ],
+                            "Fix Joint Location": false,
+                            "Auto-calculate Lead frame": true,
+                            "Lead Local Position": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "Lead Local Rotation": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "Display Joint Setup": 1,
+                            "Is Limited": true,
+                            "Linear Limit Lower": -1.0,
+                            "Linear Limit Upper": 1.0,
+                            "Angular Limit Negative": 360.0,
+                            "Angular Limit Positive": -360.0,
+                            "Motor configuration": {
+                                "UseMotor": true,
+                                "ForceLimit": 1000.0,
+                                "Stiffness": 2000.0,
+                                "Damping": 300.0
+                            },
+                            "Armature": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "Friction": 0.0,
+                            "Sensor Configurations": []
+                        }
+                    }
+                },
+                {
+                    "op": "remove",
+                    "path": "/Entities/Entity_[1940801666028]/Components/EditorHingeJointComponent"
+                },
+                {
+                    "op": "remove",
+                    "path": "/Entities/Entity_[1940801666028]/Components/EditorRigidBodyComponent"
+                },
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[1945096633324]/Components/EditorPendingCompositionComponent/PendingComponents",
+                    "value": {
+                        "EditorFixedJointComponent": {
+                            "$type": "EditorFixedJointComponent",
+                            "Id": 16842558239777053910,
+                            "Configuration": {
+                                "Local Position": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                ],
+                                "Local Rotation": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                ],
+                                "Fix Joint Location": false,
+                                "Parent Entity": "",
+                                "Child Entity": "",
+                                "Breakable": false,
+                                "Maximum Force": 1.0,
+                                "Maximum Torque": 1.0,
+                                "Display Debug": 1,
+                                "Select Lead on Snap": true,
+                                "Self Collide": false
+                            },
+                            "Component Mode": {}
+                        }
+                    }
+                },
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[1945096633324]/Components/ROS2FrameComponent/m_template/Namespace Configuration/Namespace Strategy",
+                    "value": 1
+                },
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[1945096633324]/Components/ROS2FrameComponent/m_template/Publish Transform",
+                    "value": false
+                },
+                {
+                    "op": "add",
+                    "path": "/Entities/Entity_[1945096633324]/Components/EditorArticulationLinkComponent",
+                    "value": {
+                        "$type": "EditorArticulationLinkComponent",
+                        "Id": 5875584570108769138,
+                        "ArticulationConfiguration": {
+                            "name": "",
+                            "position": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "orientation": [
+                                0.0,
+                                0.0,
+                                0.0,
+                                1.0
+                            ],
+                            "entityId": "",
+                            "startSimulationEnabled": true,
+                            "Fixed Base": false,
+                            "Self Collide": false,
+                            "Mass": 1.0,
+                            "Gravity Enabled": true,
+                            "Linear damping": 0.05000000074505806,
+                            "Angular damping": 0.15000000596046448,
+                            "Sleep threshold": 0.004999999888241291,
+                            "Start Asleep": false,
+                            "Centre of mass offset": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "Maximum Angular Velocity": 100.0,
+                            "SolverPositionIterations": 4,
+                            "SolverVelocityIterations": 1,
+                            "Articulation Joint Type": 0,
+                            "Local Position": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "Local Rotation": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "Fix Joint Location": false,
+                            "Auto-calculate Lead frame": true,
+                            "Lead Local Position": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "Lead Local Rotation": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "Display Joint Setup": 1,
+                            "Is Limited": true,
+                            "Linear Limit Lower": -1.0,
+                            "Linear Limit Upper": 1.0,
+                            "Angular Limit Negative": -45.0,
+                            "Angular Limit Positive": 45.0,
+                            "Motor configuration": {
+                                "UseMotor": false,
+                                "ForceLimit": 1.0,
+                                "Stiffness": 1.0,
+                                "Damping": 1.0
+                            },
+                            "Armature": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "Friction": 0.0,
+                            "Sensor Configurations": []
+                        }
+                    }
+                },
+                {
+                    "op": "remove",
+                    "path": "/Entities/Entity_[1945096633324]/Components/EditorFixedJointComponent"
+                },
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[1949391600620]/Components/EditorPendingCompositionComponent/PendingComponents",
+                    "value": {
+                        "EditorFixedJointComponent": {
+                            "$type": "EditorFixedJointComponent",
+                            "Id": 5082212430318607554,
+                            "Configuration": {
+                                "Local Position": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                ],
+                                "Local Rotation": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                ],
+                                "Fix Joint Location": false,
+                                "Parent Entity": "",
+                                "Child Entity": "",
+                                "Breakable": false,
+                                "Maximum Force": 1.0,
+                                "Maximum Torque": 1.0,
+                                "Display Debug": 1,
+                                "Select Lead on Snap": true,
+                                "Self Collide": false
+                            },
+                            "Component Mode": {}
+                        }
+                    }
+                },
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[1949391600620]/Components/ROS2FrameComponent/m_template/Namespace Configuration/Namespace Strategy",
+                    "value": 1
+                },
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[1949391600620]/Components/ROS2FrameComponent/m_template/Publish Transform",
+                    "value": false
+                },
+                {
+                    "op": "add",
+                    "path": "/Entities/Entity_[1949391600620]/Components/EditorArticulationLinkComponent",
+                    "value": {
+                        "$type": "EditorArticulationLinkComponent",
+                        "Id": 7085118085393049202,
+                        "ArticulationConfiguration": {
+                            "name": "",
+                            "position": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "orientation": [
+                                0.0,
+                                0.0,
+                                0.0,
+                                1.0
+                            ],
+                            "entityId": "",
+                            "startSimulationEnabled": true,
+                            "Fixed Base": false,
+                            "Self Collide": false,
+                            "Mass": 1.0,
+                            "Gravity Enabled": true,
+                            "Linear damping": 0.05000000074505806,
+                            "Angular damping": 0.15000000596046448,
+                            "Sleep threshold": 0.004999999888241291,
+                            "Start Asleep": false,
+                            "Centre of mass offset": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "Maximum Angular Velocity": 100.0,
+                            "SolverPositionIterations": 4,
+                            "SolverVelocityIterations": 1,
+                            "Articulation Joint Type": 0,
+                            "Local Position": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "Local Rotation": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "Fix Joint Location": false,
+                            "Auto-calculate Lead frame": true,
+                            "Lead Local Position": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "Lead Local Rotation": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "Display Joint Setup": 1,
+                            "Is Limited": true,
+                            "Linear Limit Lower": -1.0,
+                            "Linear Limit Upper": 1.0,
+                            "Angular Limit Negative": -45.0,
+                            "Angular Limit Positive": 45.0,
+                            "Motor configuration": {
+                                "UseMotor": false,
+                                "ForceLimit": 1.0,
+                                "Stiffness": 1.0,
+                                "Damping": 1.0
+                            },
+                            "Armature": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "Friction": 0.0,
+                            "Sensor Configurations": []
+                        }
+                    }
+                },
+                {
+                    "op": "remove",
+                    "path": "/Entities/Entity_[1949391600620]/Components/EditorFixedJointComponent"
+                },
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[1953686567916]/Components/AZ::Render::EditorMeshComponent/Controller/Configuration/ModelAsset/loadBehavior",
+                    "value": "QueueLoad"
+                },
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[1957981535212]/Components/EditorDisabledCompositionComponent/DisabledComponents",
+                    "value": {
+                        "EditorRigidBodyComponent": {
+                            "$type": "EditorRigidBodyComponent",
+                            "Id": 3302055502530092531,
+                            "Configuration": {
+                                "name": "",
+                                "position": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                ],
+                                "orientation": [
+                                    0.0,
+                                    0.0,
+                                    0.0,
+                                    1.0
+                                ],
+                                "entityId": "",
+                                "startSimulationEnabled": true,
+                                "Kinematic": false,
+                                "Initial linear velocity": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                ],
+                                "Initial angular velocity": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                ],
+                                "Linear damping": 0.05000000074505806,
+                                "Angular damping": 0.15000000596046448,
+                                "Sleep threshold": 0.004999999888241291,
+                                "Start Asleep": false,
+                                "Interpolate Motion": false,
+                                "Gravity Enabled": true,
+                                "CCD Enabled": false,
+                                "Compute Mass": false,
+                                "Lock Linear X": false,
+                                "Lock Linear Y": false,
+                                "Lock Linear Z": false,
+                                "Lock Angular X": false,
+                                "Lock Angular Y": false,
+                                "Lock Angular Z": false,
+                                "Mass": 1.218999981880188,
+                                "Compute COM": false,
+                                "Centre of mass offset": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                ],
+                                "Compute inertia": false,
+                                "Inertia tensor": [
+                                    0.0018310388550162315,
+                                    0.0,
+                                    0.0,
+                                    0.0,
+                                    0.0018310388550162315,
+                                    0.0,
+                                    0.0,
+                                    0.0,
+                                    0.0021941999439150095
+                                ],
+                                "Maximum Angular Velocity": 100.0,
+                                "Include All Shapes In Mass": false,
+                                "CCD Min Advance": 0.15000000596046448,
+                                "CCD Friction": false,
+                                "Open PhysX Configuration": false,
+                                "Debug Draw Center of Mass": false
+                            },
+                            "PhysXSpecificConfiguration": {
+                                "SolverPositionIterations": 40,
+                                "SolverVelocityIterations": 10
+                            }
+                        }
+                    }
+                },
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[1957981535212]/Components/EditorPendingCompositionComponent/PendingComponents",
+                    "value": {
+                        "EditorHingeJointComponent": {
+                            "$type": "EditorHingeJointComponent",
+                            "Id": 9754698666254633334,
+                            "Configuration": {
+                                "Local Position": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                ],
+                                "Local Rotation": [
+                                    0.0,
+                                    -89.99999237060547,
+                                    0.0
+                                ],
+                                "Fix Joint Location": false,
+                                "Parent Entity": "Entity_[1983751338988]",
+                                "Child Entity": "Entity_[1957981535212]",
+                                "Breakable": false,
+                                "Maximum Force": 1.0,
+                                "Maximum Torque": 1.0,
+                                "Display Debug": 1,
+                                "Select Lead on Snap": true,
+                                "Self Collide": false
+                            },
+                            "Angular Limit": {
+                                "Standard Limit Configuration": {
+                                    "Name": "",
+                                    "Is Limited": true,
+                                    "Is Soft Limit": false,
+                                    "Tolerance": 0.10000000149011612,
+                                    "Damping": 20.0,
+                                    "Stiffness": 100.0
+                                },
+                                "Positive Limit": 360.0,
+                                "Negative Limit": -360.0
+                            },
+                            "Motor": {
+                                "UseMotor": false,
+                                "ForceLimit": 1.0
+                            },
+                            "Component Mode": {}
+                        }
+                    }
+                },
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[1957981535212]/Components/ROS2FrameComponent/m_template/Namespace Configuration/Namespace Strategy",
+                    "value": 1
+                },
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[1957981535212]/Components/ROS2FrameComponent/m_template/Publish Transform",
+                    "value": false
+                },
+                {
+                    "op": "add",
+                    "path": "/Entities/Entity_[1957981535212]/Components/EditorArticulationLinkComponent",
+                    "value": {
+                        "$type": "EditorArticulationLinkComponent",
+                        "Id": 16225551006512123644,
+                        "ArticulationConfiguration": {
+                            "name": "",
+                            "position": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "orientation": [
+                                0.0,
+                                0.0,
+                                0.0,
+                                1.0
+                            ],
+                            "entityId": "",
+                            "startSimulationEnabled": true,
+                            "Fixed Base": false,
+                            "Self Collide": false,
+                            "Mass": 1.0,
+                            "Gravity Enabled": true,
+                            "Linear damping": 0.05000000074505806,
+                            "Angular damping": 0.15000000596046448,
+                            "Sleep threshold": 0.004999999888241291,
+                            "Start Asleep": false,
+                            "Centre of mass offset": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "Maximum Angular Velocity": 100.0,
+                            "SolverPositionIterations": 4,
+                            "SolverVelocityIterations": 1,
+                            "Articulation Joint Type": 1,
+                            "Local Position": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "Local Rotation": [
+                                0.0,
+                                -90.0,
+                                0.0
+                            ],
+                            "Fix Joint Location": false,
+                            "Auto-calculate Lead frame": true,
+                            "Lead Local Position": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "Lead Local Rotation": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "Display Joint Setup": 1,
+                            "Is Limited": true,
+                            "Linear Limit Lower": -1.0,
+                            "Linear Limit Upper": 1.0,
+                            "Angular Limit Negative": 360.0,
+                            "Angular Limit Positive": -360.0,
+                            "Motor configuration": {
+                                "UseMotor": true,
+                                "ForceLimit": 1000.0,
+                                "Stiffness": 2000.0,
+                                "Damping": 300.0
+                            },
+                            "Armature": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "Friction": 0.0,
+                            "Sensor Configurations": []
+                        }
+                    }
+                },
+                {
+                    "op": "remove",
+                    "path": "/Entities/Entity_[1957981535212]/Components/EditorHingeJointComponent"
+                },
+                {
+                    "op": "remove",
+                    "path": "/Entities/Entity_[1957981535212]/Components/EditorRigidBodyComponent"
+                },
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[1962276502508]/Components/AZ::Render::EditorMeshComponent/Controller/Configuration/ModelAsset/loadBehavior",
+                    "value": "QueueLoad"
+                },
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[1966571469804]/Components/AZ::Render::EditorMeshComponent/Controller/Configuration/ModelAsset/loadBehavior",
+                    "value": "QueueLoad"
+                },
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[1970866437100]/Components/AZ::Render::EditorMeshComponent/Controller/Configuration/ModelAsset/loadBehavior",
+                    "value": "QueueLoad"
+                },
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[1975161404396]/Components/AZ::Render::EditorMeshComponent/Controller/Configuration/ModelAsset/loadBehavior",
+                    "value": "QueueLoad"
+                },
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[1979456371692]/Components/EditorDisabledCompositionComponent/DisabledComponents",
+                    "value": {
+                        "EditorRigidBodyComponent": {
+                            "$type": "EditorRigidBodyComponent",
+                            "Id": 7172660711222676310,
+                            "Configuration": {
+                                "name": "",
+                                "position": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                ],
+                                "orientation": [
+                                    0.0,
+                                    0.0,
+                                    0.0,
+                                    1.0
+                                ],
+                                "entityId": "",
+                                "startSimulationEnabled": true,
+                                "Kinematic": false,
+                                "Initial linear velocity": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                ],
+                                "Initial angular velocity": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                ],
+                                "Linear damping": 0.05000000074505806,
+                                "Angular damping": 0.15000000596046448,
+                                "Sleep threshold": 0.004999999888241291,
+                                "Start Asleep": false,
+                                "Interpolate Motion": false,
+                                "Gravity Enabled": true,
+                                "CCD Enabled": false,
+                                "Compute Mass": false,
+                                "Lock Linear X": false,
+                                "Lock Linear Y": false,
+                                "Lock Linear Z": false,
+                                "Lock Angular X": false,
+                                "Lock Angular Y": false,
+                                "Lock Angular Z": false,
+                                "Mass": 8.392999649047852,
+                                "Compute COM": false,
+                                "Centre of mass offset": [
+                                    -0.21250000596046448,
+                                    0.0,
+                                    0.13600000739097595
+                                ],
+                                "Compute inertia": false,
+                                "Inertia tensor": [
+                                    0.1338857859373093,
+                                    0.0,
+                                    0.0,
+                                    0.0,
+                                    0.1338857859373093,
+                                    0.0,
+                                    0.0,
+                                    0.0,
+                                    0.01510739978402853
+                                ],
+                                "Maximum Angular Velocity": 100.0,
+                                "Include All Shapes In Mass": false,
+                                "CCD Min Advance": 0.15000000596046448,
+                                "CCD Friction": false,
+                                "Open PhysX Configuration": false,
+                                "Debug Draw Center of Mass": false
+                            },
+                            "PhysXSpecificConfiguration": {
+                                "SolverPositionIterations": 40,
+                                "SolverVelocityIterations": 10
+                            }
+                        }
+                    }
+                },
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[1979456371692]/Components/EditorPendingCompositionComponent/PendingComponents",
+                    "value": {
+                        "EditorHingeJointComponent": {
+                            "$type": "EditorHingeJointComponent",
+                            "Id": 13451086235142467599,
+                            "Configuration": {
+                                "Local Position": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                ],
+                                "Local Rotation": [
+                                    0.0,
+                                    -89.99999237060547,
+                                    0.0
+                                ],
+                                "Fix Joint Location": false,
+                                "Parent Entity": "Entity_[2018111077356]",
+                                "Child Entity": "Entity_[1979456371692]",
+                                "Breakable": false,
+                                "Maximum Force": 1.0,
+                                "Maximum Torque": 1.0,
+                                "Display Debug": 1,
+                                "Select Lead on Snap": true,
+                                "Self Collide": false
+                            },
+                            "Angular Limit": {
+                                "Standard Limit Configuration": {
+                                    "Name": "",
+                                    "Is Limited": true,
+                                    "Is Soft Limit": false,
+                                    "Tolerance": 0.10000000149011612,
+                                    "Damping": 20.0,
+                                    "Stiffness": 100.0
+                                },
+                                "Positive Limit": 360.0,
+                                "Negative Limit": -360.0
+                            },
+                            "Motor": {
+                                "UseMotor": false,
+                                "ForceLimit": 1.0
+                            },
+                            "Component Mode": {}
+                        }
+                    }
+                },
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[1979456371692]/Components/ROS2FrameComponent/m_template/Namespace Configuration/Namespace Strategy",
+                    "value": 1
+                },
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[1979456371692]/Components/ROS2FrameComponent/m_template/Publish Transform",
+                    "value": false
+                },
+                {
+                    "op": "add",
+                    "path": "/Entities/Entity_[1979456371692]/Components/EditorArticulationLinkComponent",
+                    "value": {
+                        "$type": "EditorArticulationLinkComponent",
+                        "Id": 15868930671902143539,
+                        "ArticulationConfiguration": {
+                            "name": "",
+                            "position": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "orientation": [
+                                0.0,
+                                0.0,
+                                0.0,
+                                1.0
+                            ],
+                            "entityId": "",
+                            "startSimulationEnabled": true,
+                            "Fixed Base": false,
+                            "Self Collide": false,
+                            "Mass": 1.0,
+                            "Gravity Enabled": true,
+                            "Linear damping": 0.05000000074505806,
+                            "Angular damping": 0.15000000596046448,
+                            "Sleep threshold": 0.004999999888241291,
+                            "Start Asleep": false,
+                            "Centre of mass offset": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "Maximum Angular Velocity": 100.0,
+                            "SolverPositionIterations": 4,
+                            "SolverVelocityIterations": 1,
+                            "Articulation Joint Type": 1,
+                            "Local Position": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "Local Rotation": [
+                                0.0,
+                                -90.0,
+                                0.0
+                            ],
+                            "Fix Joint Location": false,
+                            "Auto-calculate Lead frame": true,
+                            "Lead Local Position": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "Lead Local Rotation": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "Display Joint Setup": 1,
+                            "Is Limited": true,
+                            "Linear Limit Lower": -1.0,
+                            "Linear Limit Upper": 1.0,
+                            "Angular Limit Negative": 360.0,
+                            "Angular Limit Positive": -360.0,
+                            "Motor configuration": {
+                                "UseMotor": true,
+                                "ForceLimit": 1000.0,
+                                "Stiffness": 2000.0,
+                                "Damping": 300.0
+                            },
+                            "Armature": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "Friction": 0.0,
+                            "Sensor Configurations": []
+                        }
+                    }
+                },
+                {
+                    "op": "remove",
+                    "path": "/Entities/Entity_[1979456371692]/Components/EditorHingeJointComponent"
+                },
+                {
+                    "op": "remove",
+                    "path": "/Entities/Entity_[1979456371692]/Components/EditorRigidBodyComponent"
+                },
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[1983751338988]/Components/EditorDisabledCompositionComponent/DisabledComponents",
+                    "value": {
+                        "EditorRigidBodyComponent": {
+                            "$type": "EditorRigidBodyComponent",
+                            "Id": 4325850318306317455,
+                            "Configuration": {
+                                "name": "",
+                                "position": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                ],
+                                "orientation": [
+                                    0.0,
+                                    0.0,
+                                    0.0,
+                                    1.0
+                                ],
+                                "entityId": "",
+                                "startSimulationEnabled": true,
+                                "Kinematic": false,
+                                "Initial linear velocity": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                ],
+                                "Initial angular velocity": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                ],
+                                "Linear damping": 0.05000000074505806,
+                                "Angular damping": 0.15000000596046448,
+                                "Sleep threshold": 0.004999999888241291,
+                                "Start Asleep": false,
+                                "Interpolate Motion": false,
+                                "Gravity Enabled": true,
+                                "CCD Enabled": false,
+                                "Compute Mass": false,
+                                "Lock Linear X": false,
+                                "Lock Linear Y": false,
+                                "Lock Linear Z": false,
+                                "Lock Angular X": false,
+                                "Lock Angular Y": false,
+                                "Lock Angular Z": false,
+                                "Mass": 1.218999981880188,
+                                "Compute COM": false,
+                                "Centre of mass offset": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                ],
+                                "Compute inertia": false,
+                                "Inertia tensor": [
+                                    0.0020138886757194996,
+                                    0.0,
+                                    0.0,
+                                    0.0,
+                                    0.0020138886757194996,
+                                    0.0,
+                                    0.0,
+                                    0.0,
+                                    0.0021941999439150095
+                                ],
+                                "Maximum Angular Velocity": 100.0,
+                                "Include All Shapes In Mass": false,
+                                "CCD Min Advance": 0.15000000596046448,
+                                "CCD Friction": false,
+                                "Open PhysX Configuration": false,
+                                "Debug Draw Center of Mass": false
+                            },
+                            "PhysXSpecificConfiguration": {
+                                "SolverPositionIterations": 40,
+                                "SolverVelocityIterations": 10
+                            }
+                        }
+                    }
+                },
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[1983751338988]/Components/EditorPendingCompositionComponent/PendingComponents",
+                    "value": {
+                        "EditorHingeJointComponent": {
+                            "$type": "EditorHingeJointComponent",
+                            "Id": 12204319967276667560,
+                            "Configuration": {
+                                "Local Position": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                ],
+                                "Local Rotation": [
+                                    0.0,
+                                    -89.99999237060547,
+                                    0.0
+                                ],
+                                "Fix Joint Location": false,
+                                "Parent Entity": "Entity_[2022406044652]",
+                                "Child Entity": "Entity_[1983751338988]",
+                                "Breakable": false,
+                                "Maximum Force": 1.0,
+                                "Maximum Torque": 1.0,
+                                "Display Debug": 1,
+                                "Select Lead on Snap": true,
+                                "Self Collide": false
+                            },
+                            "Angular Limit": {
+                                "Standard Limit Configuration": {
+                                    "Name": "",
+                                    "Is Limited": true,
+                                    "Is Soft Limit": false,
+                                    "Tolerance": 0.10000000149011612,
+                                    "Damping": 20.0,
+                                    "Stiffness": 100.0
+                                },
+                                "Positive Limit": 360.0,
+                                "Negative Limit": -360.0
+                            },
+                            "Motor": {
+                                "UseMotor": false,
+                                "ForceLimit": 1.0
+                            },
+                            "Component Mode": {}
+                        }
+                    }
+                },
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[1983751338988]/Components/ROS2FrameComponent/m_template/Namespace Configuration/Namespace Strategy",
+                    "value": 1
+                },
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[1983751338988]/Components/ROS2FrameComponent/m_template/Publish Transform",
+                    "value": false
+                },
+                {
+                    "op": "add",
+                    "path": "/Entities/Entity_[1983751338988]/Components/EditorArticulationLinkComponent",
+                    "value": {
+                        "$type": "EditorArticulationLinkComponent",
+                        "Id": 3570032470298649957,
+                        "ArticulationConfiguration": {
+                            "name": "",
+                            "position": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "orientation": [
+                                0.0,
+                                0.0,
+                                0.0,
+                                1.0
+                            ],
+                            "entityId": "",
+                            "startSimulationEnabled": true,
+                            "Fixed Base": false,
+                            "Self Collide": false,
+                            "Mass": 1.0,
+                            "Gravity Enabled": true,
+                            "Linear damping": 0.05000000074505806,
+                            "Angular damping": 0.15000000596046448,
+                            "Sleep threshold": 0.004999999888241291,
+                            "Start Asleep": false,
+                            "Centre of mass offset": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "Maximum Angular Velocity": 100.0,
+                            "SolverPositionIterations": 4,
+                            "SolverVelocityIterations": 1,
+                            "Articulation Joint Type": 1,
+                            "Local Position": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "Local Rotation": [
+                                0.0,
+                                -90.0,
+                                0.0
+                            ],
+                            "Fix Joint Location": false,
+                            "Auto-calculate Lead frame": true,
+                            "Lead Local Position": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "Lead Local Rotation": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "Display Joint Setup": 1,
+                            "Is Limited": true,
+                            "Linear Limit Lower": -1.0,
+                            "Linear Limit Upper": 1.0,
+                            "Angular Limit Negative": 360.0,
+                            "Angular Limit Positive": -360.0,
+                            "Motor configuration": {
+                                "UseMotor": true,
+                                "ForceLimit": 1000.0,
+                                "Stiffness": 2000.0,
+                                "Damping": 300.0
+                            },
+                            "Armature": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "Friction": 0.0,
+                            "Sensor Configurations": []
+                        }
+                    }
+                },
+                {
+                    "op": "remove",
+                    "path": "/Entities/Entity_[1983751338988]/Components/EditorHingeJointComponent"
+                },
+                {
+                    "op": "remove",
+                    "path": "/Entities/Entity_[1983751338988]/Components/EditorRigidBodyComponent"
+                },
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[1988046306284]/Components/EditorDisabledCompositionComponent/DisabledComponents",
+                    "value": {
+                        "EditorRigidBodyComponent": {
+                            "$type": "EditorRigidBodyComponent",
+                            "Id": 17384008433628705474,
+                            "Configuration": {
+                                "name": "",
+                                "position": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                ],
+                                "orientation": [
+                                    0.0,
+                                    0.0,
+                                    0.0,
+                                    1.0
+                                ],
+                                "entityId": "",
+                                "startSimulationEnabled": true,
+                                "Kinematic": false,
+                                "Initial linear velocity": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                ],
+                                "Initial angular velocity": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                ],
+                                "Linear damping": 0.05000000074505806,
+                                "Angular damping": 0.15000000596046448,
+                                "Sleep threshold": 0.004999999888241291,
+                                "Start Asleep": false,
+                                "Interpolate Motion": false,
+                                "Gravity Enabled": true,
+                                "CCD Enabled": false,
+                                "Compute Mass": false,
+                                "Lock Linear X": false,
+                                "Lock Linear Y": false,
+                                "Lock Linear Z": false,
+                                "Lock Angular X": false,
+                                "Lock Angular Y": false,
+                                "Lock Angular Z": false,
+                                "Mass": 4.0,
+                                "Compute COM": false,
+                                "Centre of mass offset": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                ],
+                                "Compute inertia": false,
+                                "Inertia tensor": [
+                                    0.004433331545442343,
+                                    0.0,
+                                    0.0,
+                                    0.0,
+                                    0.004433331545442343,
+                                    0.0,
+                                    0.0,
+                                    0.0,
+                                    0.007200000341981649
+                                ],
+                                "Maximum Angular Velocity": 100.0,
+                                "Include All Shapes In Mass": false,
+                                "CCD Min Advance": 0.15000000596046448,
+                                "CCD Friction": false,
+                                "Open PhysX Configuration": false,
+                                "Debug Draw Center of Mass": false
+                            },
+                            "PhysXSpecificConfiguration": {
+                                "SolverPositionIterations": 40,
+                                "SolverVelocityIterations": 10
+                            }
+                        }
+                    }
+                },
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[1988046306284]/Components/EditorPendingCompositionComponent/PendingComponents",
+                    "value": {
+                        "EditorFixedJointComponent": {
+                            "$type": "EditorFixedJointComponent",
+                            "Id": 12177568709933694544,
+                            "Configuration": {
+                                "Local Position": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                ],
+                                "Local Rotation": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                ],
+                                "Fix Joint Location": false,
+                                "Parent Entity": "Entity_[2000931208172]",
+                                "Child Entity": "Entity_[1988046306284]",
+                                "Breakable": false,
+                                "Maximum Force": 1.0,
+                                "Maximum Torque": 1.0,
+                                "Display Debug": 1,
+                                "Select Lead on Snap": true,
+                                "Self Collide": false
+                            },
+                            "Component Mode": {}
+                        }
+                    }
+                },
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[1988046306284]/Components/ROS2FrameComponent/m_template/Namespace Configuration/Namespace Strategy",
+                    "value": 1
+                },
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[1988046306284]/Components/ROS2FrameComponent/m_template/Publish Transform",
+                    "value": false
+                },
+                {
+                    "op": "add",
+                    "path": "/Entities/Entity_[1988046306284]/Components/EditorArticulationLinkComponent",
+                    "value": {
+                        "$type": "EditorArticulationLinkComponent",
+                        "Id": 2250646569254184334,
+                        "ArticulationConfiguration": {
+                            "name": "",
+                            "position": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "orientation": [
+                                0.0,
+                                0.0,
+                                0.0,
+                                1.0
+                            ],
+                            "entityId": "",
+                            "startSimulationEnabled": true,
+                            "Fixed Base": false,
+                            "Self Collide": false,
+                            "Mass": 1.0,
+                            "Gravity Enabled": true,
+                            "Linear damping": 0.05000000074505806,
+                            "Angular damping": 0.15000000596046448,
+                            "Sleep threshold": 0.004999999888241291,
+                            "Start Asleep": false,
+                            "Centre of mass offset": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "Maximum Angular Velocity": 100.0,
+                            "SolverPositionIterations": 4,
+                            "SolverVelocityIterations": 1,
+                            "Articulation Joint Type": 0,
+                            "Local Position": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "Local Rotation": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "Fix Joint Location": false,
+                            "Auto-calculate Lead frame": true,
+                            "Lead Local Position": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "Lead Local Rotation": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "Display Joint Setup": 1,
+                            "Is Limited": true,
+                            "Linear Limit Lower": -1.0,
+                            "Linear Limit Upper": 1.0,
+                            "Angular Limit Negative": -45.0,
+                            "Angular Limit Positive": 45.0,
+                            "Motor configuration": {
+                                "UseMotor": false,
+                                "ForceLimit": 1.0,
+                                "Stiffness": 1.0,
+                                "Damping": 1.0
+                            },
+                            "Armature": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "Friction": 0.0,
+                            "Sensor Configurations": []
+                        }
+                    }
+                },
+                {
+                    "op": "remove",
+                    "path": "/Entities/Entity_[1988046306284]/Components/EditorFixedJointComponent"
+                },
+                {
+                    "op": "remove",
+                    "path": "/Entities/Entity_[1988046306284]/Components/EditorRigidBodyComponent"
+                },
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[1992341273580]/Components/EditorPendingCompositionComponent/PendingComponents",
+                    "value": {
+                        "EditorFixedJointComponent": {
+                            "$type": "EditorFixedJointComponent",
+                            "Id": 14336748710785093841,
+                            "Configuration": {
+                                "Local Position": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                ],
+                                "Local Rotation": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                ],
+                                "Fix Joint Location": false,
+                                "Parent Entity": "",
+                                "Child Entity": "",
+                                "Breakable": false,
+                                "Maximum Force": 1.0,
+                                "Maximum Torque": 1.0,
+                                "Display Debug": 1,
+                                "Select Lead on Snap": true,
+                                "Self Collide": false
+                            },
+                            "Component Mode": {}
+                        }
+                    }
+                },
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[1992341273580]/Components/ROS2FrameComponent/m_template/Publish Transform",
+                    "value": false
+                },
+                {
+                    "op": "remove",
+                    "path": "/Entities/Entity_[1992341273580]/Components/EditorFixedJointComponent"
+                },
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[1996636240876]/Components/AZ::Render::EditorMeshComponent/Controller/Configuration/ModelAsset/loadBehavior",
+                    "value": "QueueLoad"
+                },
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[2000931208172]/Components/EditorDisabledCompositionComponent/DisabledComponents",
+                    "value": {
+                        "EditorRigidBodyComponent": {
+                            "$type": "EditorRigidBodyComponent",
+                            "Id": 9624358978184048394,
+                            "Configuration": {
+                                "name": "",
+                                "position": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                ],
+                                "orientation": [
+                                    0.0,
+                                    0.0,
+                                    0.0,
+                                    1.0
+                                ],
+                                "entityId": "",
+                                "startSimulationEnabled": true,
+                                "Kinematic": false,
+                                "Initial linear velocity": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                ],
+                                "Initial angular velocity": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                ],
+                                "Linear damping": 0.05000000074505806,
+                                "Angular damping": 0.15000000596046448,
+                                "Sleep threshold": 0.004999999888241291,
+                                "Start Asleep": false,
+                                "Interpolate Motion": false,
+                                "Gravity Enabled": true,
+                                "CCD Enabled": false,
+                                "Compute Mass": true,
+                                "Lock Linear X": false,
+                                "Lock Linear Y": false,
+                                "Lock Linear Z": false,
+                                "Lock Angular X": false,
+                                "Lock Angular Y": false,
+                                "Lock Angular Z": false,
+                                "Mass": 1.0,
+                                "Compute COM": true,
+                                "Centre of mass offset": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                ],
+                                "Compute inertia": true,
+                                "Inertia tensor": [
+                                    1.0,
+                                    0.0,
+                                    0.0,
+                                    0.0,
+                                    1.0,
+                                    0.0,
+                                    0.0,
+                                    0.0,
+                                    1.0
+                                ],
+                                "Maximum Angular Velocity": 100.0,
+                                "Include All Shapes In Mass": false,
+                                "CCD Min Advance": 0.15000000596046448,
+                                "CCD Friction": false,
+                                "Open PhysX Configuration": false,
+                                "Debug Draw Center of Mass": false
+                            },
+                            "PhysXSpecificConfiguration": {
+                                "SolverPositionIterations": 4,
+                                "SolverVelocityIterations": 1
+                            }
+                        }
+                    }
+                },
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[2000931208172]/Components/EditorPendingCompositionComponent/PendingComponents",
+                    "value": {
+                        "EditorFixedJointComponent": {
+                            "$type": "EditorFixedJointComponent",
+                            "Id": 846896739288839327,
+                            "Configuration": {
+                                "Local Position": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                ],
+                                "Local Rotation": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                ],
+                                "Fix Joint Location": false,
+                                "Parent Entity": "",
+                                "Child Entity": "Entity_[2000931208172]",
+                                "Breakable": false,
+                                "Maximum Force": 1.0,
+                                "Maximum Torque": 1.0,
+                                "Display Debug": 1,
+                                "Select Lead on Snap": true,
+                                "Self Collide": false
+                            },
+                            "Component Mode": {}
+                        }
+                    }
+                },
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[2000931208172]/Components/ROS2FrameComponent/m_template/Namespace Configuration/Namespace Strategy",
+                    "value": 1
+                },
+                {
+                    "op": "add",
+                    "path": "/Entities/Entity_[2000931208172]/Components/EditorArticulationLinkComponent",
+                    "value": {
+                        "$type": "EditorArticulationLinkComponent",
+                        "Id": 12778809072481995779,
+                        "ArticulationConfiguration": {
+                            "name": "",
+                            "position": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "orientation": [
+                                0.0,
+                                0.0,
+                                0.0,
+                                1.0
+                            ],
+                            "entityId": "",
+                            "startSimulationEnabled": true,
+                            "Fixed Base": true,
+                            "Self Collide": false,
+                            "Mass": 1.0,
+                            "Gravity Enabled": true,
+                            "Linear damping": 0.05000000074505806,
+                            "Angular damping": 0.15000000596046448,
+                            "Sleep threshold": 0.004999999888241291,
+                            "Start Asleep": false,
+                            "Centre of mass offset": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "Maximum Angular Velocity": 100.0,
+                            "SolverPositionIterations": 4,
+                            "SolverVelocityIterations": 1,
+                            "Articulation Joint Type": 0,
+                            "Local Position": [
+                                0.0,
+                                0.18826846778392792,
+                                -0.8683627843856812
+                            ],
+                            "Local Rotation": [
+                                88.96963500976563,
+                                8.029440200581202e-43,
+                                180.0
+                            ],
+                            "Fix Joint Location": false,
+                            "Auto-calculate Lead frame": true,
+                            "Lead Local Position": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "Lead Local Rotation": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "Display Joint Setup": 1,
+                            "Is Limited": true,
+                            "Linear Limit Lower": -1.0,
+                            "Linear Limit Upper": 1.0,
+                            "Angular Limit Negative": -45.0,
+                            "Angular Limit Positive": 45.0,
+                            "Motor configuration": {
+                                "UseMotor": false,
+                                "ForceLimit": 1.0,
+                                "Stiffness": 1.0,
+                                "Damping": 1.0
+                            },
+                            "Armature": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "Friction": 0.0,
+                            "Sensor Configurations": []
+                        }
+                    }
+                },
+                {
+                    "op": "add",
+                    "path": "/Entities/Entity_[2000931208172]/Components/JointPublisherComponent",
+                    "value": {
+                        "$type": "GenericComponentWrapper",
+                        "Id": 8288272212016763815,
+                        "m_template": {
+                            "$type": "JointPublisherComponent",
+                            "Id": 0,
+                            "Frequency (HZ)": 10.0
+                        }
+                    }
+                },
+                {
+                    "op": "add",
+                    "path": "/Entities/Entity_[2000931208172]/Components/ManipulatorControllerComponent",
+                    "value": {
+                        "$type": "GenericComponentWrapper",
+                        "Id": 17390197585685619193,
+                        "m_template": {
+                            "$type": "ManipulatorControllerComponent",
+                            "Id": 0,
+                            "ROS2 Controller name": "joint_trajectory_controller",
+                            "Controller type": 2,
+                            "PID Configuration Vector": [],
+                            "Initial positions": {
+                                "elbow_joint": -0.25,
+                                "shoulder_lift_joint": -1.5,
+                                "shoulder_pan_joint": -1.0,
+                                "wrist_1_joint": -0.5,
+                                "wrist_2_joint": -1.5700000524520874,
+                                "wrist_3_joint": -1.0
+                            }
+                        }
+                    }
+                },
+                {
+                    "op": "remove",
+                    "path": "/Entities/Entity_[2000931208172]/Components/EditorFixedJointComponent"
+                },
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[2005226175468]/Components/AZ::Render::EditorMeshComponent/Controller/Configuration/ModelAsset/loadBehavior",
+                    "value": "QueueLoad"
+                },
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[2009521142764]/Components/EditorDisabledCompositionComponent/DisabledComponents",
+                    "value": {
+                        "EditorArticulationLinkComponent": {
+                            "$type": "EditorArticulationLinkComponent",
+                            "Id": 40079039713320969,
+                            "ArticulationConfiguration": {
+                                "name": "",
+                                "position": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                ],
+                                "orientation": [
+                                    0.0,
+                                    0.0,
+                                    0.0,
+                                    1.0
+                                ],
+                                "entityId": "",
+                                "startSimulationEnabled": true,
+                                "Fixed Base": true,
+                                "Self Collide": false,
+                                "Mass": 1.0,
+                                "Gravity Enabled": false,
+                                "Linear damping": 0.05000000074505806,
+                                "Angular damping": 0.15000000596046448,
+                                "Sleep threshold": 0.004999999888241291,
+                                "Start Asleep": false,
+                                "Centre of mass offset": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                ],
+                                "Maximum Angular Velocity": 100.0,
+                                "SolverPositionIterations": 4,
+                                "SolverVelocityIterations": 1,
+                                "Articulation Joint Type": 0,
+                                "Local Position": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                ],
+                                "Local Rotation": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                ],
+                                "Fix Joint Location": false,
+                                "Auto-calculate Lead frame": true,
+                                "Lead Local Position": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                ],
+                                "Lead Local Rotation": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                ],
+                                "Display Joint Setup": 1,
+                                "Is Limited": true,
+                                "Linear Limit Lower": -1.0,
+                                "Linear Limit Upper": 1.0,
+                                "Angular Limit Negative": -45.0,
+                                "Angular Limit Positive": 45.0,
+                                "Motor configuration": {
+                                    "UseMotor": false,
+                                    "ForceLimit": 1.0,
+                                    "Stiffness": 1.0,
+                                    "Damping": 1.0
+                                },
+                                "Armature": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                ],
+                                "Friction": 0.0,
+                                "Sensor Configurations": []
+                            }
+                        },
+                        "ROS2RobotControlComponent": {
+                            "$type": "GenericComponentWrapper",
+                            "Id": 12929366889569040838,
+                            "m_template": {
+                                "$type": "ROS2RobotControlComponent",
+                                "Id": 0,
+                                "ControlConfiguration": {
+                                    "Steering": 0
+                                },
+                                "SubscriberConfiguration": {
+                                    "Type": "std_msgs::msg::Empty",
+                                    "Topic": "cmd_vel",
+                                    "QoS": {
+                                        "Reliability": 2,
+                                        "Durability": 2,
+                                        "Depth": 5
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[2009521142764]/Components/ROS2FrameComponent/m_template/Namespace Configuration/Namespace Strategy",
+                    "value": 1
+                },
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[2009521142764]/Components/ROS2FrameComponent/m_template/Publish Transform",
+                    "value": false
+                },
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[2009521142764]/Components/TransformComponent/Parent Entity",
+                    "value": "ContainerEntity"
+                },
+                {
+                    "op": "remove",
+                    "path": "/Entities/Entity_[2009521142764]/Components/ROS2RobotControlComponent"
+                },
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[2013816110060]/Components/EditorDisabledCompositionComponent/DisabledComponents",
+                    "value": {
+                        "EditorRigidBodyComponent": {
+                            "$type": "EditorRigidBodyComponent",
+                            "Id": 17225941135366655382,
+                            "Configuration": {
+                                "name": "",
+                                "position": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                ],
+                                "orientation": [
+                                    0.0,
+                                    0.0,
+                                    0.0,
+                                    1.0
+                                ],
+                                "entityId": "",
+                                "startSimulationEnabled": true,
+                                "Kinematic": false,
+                                "Initial linear velocity": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                ],
+                                "Initial angular velocity": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                ],
+                                "Linear damping": 0.05000000074505806,
+                                "Angular damping": 0.15000000596046448,
+                                "Sleep threshold": 0.004999999888241291,
+                                "Start Asleep": false,
+                                "Interpolate Motion": false,
+                                "Gravity Enabled": true,
+                                "CCD Enabled": false,
+                                "Compute Mass": true,
+                                "Lock Linear X": false,
+                                "Lock Linear Y": false,
+                                "Lock Linear Z": false,
+                                "Lock Angular X": false,
+                                "Lock Angular Y": false,
+                                "Lock Angular Z": false,
+                                "Mass": 1.0,
+                                "Compute COM": true,
+                                "Centre of mass offset": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                ],
+                                "Compute inertia": true,
+                                "Inertia tensor": [
+                                    1.0,
+                                    0.0,
+                                    0.0,
+                                    0.0,
+                                    1.0,
+                                    0.0,
+                                    0.0,
+                                    0.0,
+                                    1.0
+                                ],
+                                "Maximum Angular Velocity": 100.0,
+                                "Include All Shapes In Mass": false,
+                                "CCD Min Advance": 0.15000000596046448,
+                                "CCD Friction": false,
+                                "Open PhysX Configuration": false,
+                                "Debug Draw Center of Mass": false
+                            },
+                            "PhysXSpecificConfiguration": {
+                                "SolverPositionIterations": 4,
+                                "SolverVelocityIterations": 1
+                            }
+                        }
+                    }
+                },
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[2013816110060]/Components/EditorPendingCompositionComponent/PendingComponents",
+                    "value": {
+                        "EditorFixedJointComponent": {
+                            "$type": "EditorFixedJointComponent",
+                            "Id": 11844416675101520421,
+                            "Configuration": {
+                                "Local Position": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                ],
+                                "Local Rotation": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                ],
+                                "Fix Joint Location": false,
+                                "Parent Entity": "",
+                                "Child Entity": "Entity_[2013816110060]",
+                                "Breakable": false,
+                                "Maximum Force": 1.0,
+                                "Maximum Torque": 1.0,
+                                "Display Debug": 1,
+                                "Select Lead on Snap": true,
+                                "Self Collide": false
+                            },
+                            "Component Mode": {}
+                        }
+                    }
+                },
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[2013816110060]/Components/ROS2FrameComponent/m_template/Namespace Configuration/Namespace Strategy",
+                    "value": 1
+                },
+                {
+                    "op": "add",
+                    "path": "/Entities/Entity_[2013816110060]/Components/EditorArticulationLinkComponent",
+                    "value": {
+                        "$type": "EditorArticulationLinkComponent",
+                        "Id": 8437012231793471531,
+                        "ArticulationConfiguration": {
+                            "name": "",
+                            "position": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "orientation": [
+                                0.0,
+                                0.0,
+                                0.0,
+                                1.0
+                            ],
+                            "entityId": "",
+                            "startSimulationEnabled": true,
+                            "Fixed Base": false,
+                            "Self Collide": false,
+                            "Mass": 1.0,
+                            "Gravity Enabled": true,
+                            "Linear damping": 0.05000000074505806,
+                            "Angular damping": 0.15000000596046448,
+                            "Sleep threshold": 0.004999999888241291,
+                            "Start Asleep": false,
+                            "Centre of mass offset": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "Maximum Angular Velocity": 100.0,
+                            "SolverPositionIterations": 4,
+                            "SolverVelocityIterations": 1,
+                            "Articulation Joint Type": 0,
+                            "Local Position": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "Local Rotation": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "Fix Joint Location": false,
+                            "Auto-calculate Lead frame": true,
+                            "Lead Local Position": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "Lead Local Rotation": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "Display Joint Setup": 1,
+                            "Is Limited": true,
+                            "Linear Limit Lower": -1.0,
+                            "Linear Limit Upper": 1.0,
+                            "Angular Limit Negative": -45.0,
+                            "Angular Limit Positive": 45.0,
+                            "Motor configuration": {
+                                "UseMotor": false,
+                                "ForceLimit": 1.0,
+                                "Stiffness": 1.0,
+                                "Damping": 1.0
+                            },
+                            "Armature": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "Friction": 0.0,
+                            "Sensor Configurations": []
+                        }
+                    }
+                },
+                {
+                    "op": "remove",
+                    "path": "/Entities/Entity_[2013816110060]/Components/EditorFixedJointComponent"
+                },
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[2018111077356]/Components/EditorDisabledCompositionComponent/DisabledComponents",
+                    "value": {
+                        "EditorRigidBodyComponent": {
+                            "$type": "EditorRigidBodyComponent",
+                            "Id": 9103049113992991199,
+                            "Configuration": {
+                                "name": "",
+                                "position": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                ],
+                                "orientation": [
+                                    0.0,
+                                    0.0,
+                                    0.0,
+                                    1.0
+                                ],
+                                "entityId": "",
+                                "startSimulationEnabled": true,
+                                "Kinematic": false,
+                                "Initial linear velocity": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                ],
+                                "Initial angular velocity": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                ],
+                                "Linear damping": 0.05000000074505806,
+                                "Angular damping": 0.15000000596046448,
+                                "Sleep threshold": 0.004999999888241291,
+                                "Start Asleep": false,
+                                "Interpolate Motion": false,
+                                "Gravity Enabled": true,
+                                "CCD Enabled": false,
+                                "Compute Mass": false,
+                                "Lock Linear X": false,
+                                "Lock Linear Y": false,
+                                "Lock Linear Z": false,
+                                "Lock Angular X": false,
+                                "Lock Angular Y": false,
+                                "Lock Angular Z": false,
+                                "Mass": 3.700000047683716,
+                                "Compute COM": false,
+                                "Centre of mass offset": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                ],
+                                "Compute inertia": false,
+                                "Inertia tensor": [
+                                    0.014972352422773838,
+                                    0.0,
+                                    0.0,
+                                    0.0,
+                                    0.014972352422773838,
+                                    0.0,
+                                    0.0,
+                                    0.0,
+                                    0.01040625013411045
+                                ],
+                                "Maximum Angular Velocity": 100.0,
+                                "Include All Shapes In Mass": false,
+                                "CCD Min Advance": 0.15000000596046448,
+                                "CCD Friction": false,
+                                "Open PhysX Configuration": false,
+                                "Debug Draw Center of Mass": false
+                            },
+                            "PhysXSpecificConfiguration": {
+                                "SolverPositionIterations": 40,
+                                "SolverVelocityIterations": 10
+                            }
+                        }
+                    }
+                },
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[2018111077356]/Components/EditorPendingCompositionComponent/PendingComponents",
+                    "value": {
+                        "EditorHingeJointComponent": {
+                            "$type": "EditorHingeJointComponent",
+                            "Id": 13655964135248552333,
+                            "Configuration": {
+                                "Local Position": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                ],
+                                "Local Rotation": [
+                                    0.0,
+                                    -89.99999237060547,
+                                    0.0
+                                ],
+                                "Fix Joint Location": false,
+                                "Parent Entity": "Entity_[1988046306284]",
+                                "Child Entity": "Entity_[2018111077356]",
+                                "Breakable": false,
+                                "Maximum Force": 1.0,
+                                "Maximum Torque": 1.0,
+                                "Display Debug": 1,
+                                "Select Lead on Snap": true,
+                                "Self Collide": false
+                            },
+                            "Angular Limit": {
+                                "Standard Limit Configuration": {
+                                    "Name": "",
+                                    "Is Limited": true,
+                                    "Is Soft Limit": false,
+                                    "Tolerance": 0.10000000149011612,
+                                    "Damping": 20.0,
+                                    "Stiffness": 100.0
+                                },
+                                "Positive Limit": 360.0,
+                                "Negative Limit": -360.0
+                            },
+                            "Motor": {
+                                "UseMotor": false,
+                                "ForceLimit": 1.0
+                            },
+                            "Component Mode": {}
+                        }
+                    }
+                },
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[2018111077356]/Components/ROS2FrameComponent/m_template/Namespace Configuration/Namespace Strategy",
+                    "value": 1
+                },
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[2018111077356]/Components/ROS2FrameComponent/m_template/Publish Transform",
+                    "value": false
+                },
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[2018111077356]/Components/TransformComponent/Transform Data/Translate/0",
+                    "value": -9.313225746154783e-10
+                },
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[2018111077356]/Components/TransformComponent/Transform Data/Translate/1",
+                    "value": 1.4901161193847656e-8
+                },
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[2018111077356]/Components/TransformComponent/Transform Data/Translate/2",
+                    "value": 0.08915883302688599
+                },
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[2018111077356]/Components/TransformComponent/Transform Data/Rotate/0",
+                    "value": -0.000001168696485365217
+                },
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[2018111077356]/Components/TransformComponent/Transform Data/Rotate/1",
+                    "value": 0.000002279148020534194
+                },
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[2018111077356]/Components/TransformComponent/Transform Data/Rotate/2",
+                    "value": 54.295509338378906
+                },
+                {
+                    "op": "add",
+                    "path": "/Entities/Entity_[2018111077356]/Components/EditorArticulationLinkComponent",
+                    "value": {
+                        "$type": "EditorArticulationLinkComponent",
+                        "Id": 17499936488353533246,
+                        "ArticulationConfiguration": {
+                            "name": "",
+                            "position": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "orientation": [
+                                0.0,
+                                0.0,
+                                0.0,
+                                1.0
+                            ],
+                            "entityId": "",
+                            "startSimulationEnabled": true,
+                            "Fixed Base": false,
+                            "Self Collide": false,
+                            "Mass": 1.0,
+                            "Gravity Enabled": true,
+                            "Linear damping": 0.05000000074505806,
+                            "Angular damping": 0.15000000596046448,
+                            "Sleep threshold": 0.004999999888241291,
+                            "Start Asleep": false,
+                            "Centre of mass offset": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "Maximum Angular Velocity": 100.0,
+                            "SolverPositionIterations": 4,
+                            "SolverVelocityIterations": 1,
+                            "Articulation Joint Type": 1,
+                            "Local Position": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "Local Rotation": [
+                                0.0,
+                                -90.0,
+                                0.0
+                            ],
+                            "Fix Joint Location": false,
+                            "Auto-calculate Lead frame": true,
+                            "Lead Local Position": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "Lead Local Rotation": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "Display Joint Setup": 1,
+                            "Is Limited": true,
+                            "Linear Limit Lower": -1.0,
+                            "Linear Limit Upper": 1.0,
+                            "Angular Limit Negative": 360.0,
+                            "Angular Limit Positive": -360.0,
+                            "Motor configuration": {
+                                "UseMotor": true,
+                                "ForceLimit": 1000.0,
+                                "Stiffness": 2000.0,
+                                "Damping": 300.0
+                            },
+                            "Armature": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "Friction": 0.0,
+                            "Sensor Configurations": []
+                        }
+                    }
+                },
+                {
+                    "op": "remove",
+                    "path": "/Entities/Entity_[2018111077356]/Components/EditorHingeJointComponent"
+                },
+                {
+                    "op": "remove",
+                    "path": "/Entities/Entity_[2018111077356]/Components/EditorRigidBodyComponent"
+                },
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[2022406044652]/Components/EditorDisabledCompositionComponent/DisabledComponents",
+                    "value": {
+                        "EditorRigidBodyComponent": {
+                            "$type": "EditorRigidBodyComponent",
+                            "Id": 15402512114870936090,
+                            "Configuration": {
+                                "name": "",
+                                "position": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                ],
+                                "orientation": [
+                                    0.0,
+                                    0.0,
+                                    0.0,
+                                    1.0
+                                ],
+                                "entityId": "",
+                                "startSimulationEnabled": true,
+                                "Kinematic": false,
+                                "Initial linear velocity": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                ],
+                                "Initial angular velocity": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                ],
+                                "Linear damping": 0.05000000074505806,
+                                "Angular damping": 0.15000000596046448,
+                                "Sleep threshold": 0.004999999888241291,
+                                "Start Asleep": false,
+                                "Interpolate Motion": false,
+                                "Gravity Enabled": true,
+                                "CCD Enabled": false,
+                                "Compute Mass": false,
+                                "Lock Linear X": false,
+                                "Lock Linear Y": false,
+                                "Lock Linear Z": false,
+                                "Lock Angular X": false,
+                                "Lock Angular Y": false,
+                                "Lock Angular Z": false,
+                                "Mass": 2.2750000953674316,
+                                "Compute COM": false,
+                                "Centre of mass offset": [
+                                    -0.19612500071525577,
+                                    0.0,
+                                    0.016499999910593033
+                                ],
+                                "Compute inertia": false,
+                                "Inertia tensor": [
+                                    0.03121679089963436,
+                                    0.0,
+                                    0.0,
+                                    0.0,
+                                    0.03121679089963436,
+                                    0.0,
+                                    0.0,
+                                    0.0,
+                                    0.004095000214874744
+                                ],
+                                "Maximum Angular Velocity": 100.0,
+                                "Include All Shapes In Mass": false,
+                                "CCD Min Advance": 0.15000000596046448,
+                                "CCD Friction": false,
+                                "Open PhysX Configuration": false,
+                                "Debug Draw Center of Mass": false
+                            },
+                            "PhysXSpecificConfiguration": {
+                                "SolverPositionIterations": 40,
+                                "SolverVelocityIterations": 10
+                            }
+                        }
+                    }
+                },
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[2022406044652]/Components/EditorPendingCompositionComponent/PendingComponents",
+                    "value": {
+                        "EditorHingeJointComponent": {
+                            "$type": "EditorHingeJointComponent",
+                            "Id": 11943104072281392326,
+                            "Configuration": {
+                                "Local Position": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                ],
+                                "Local Rotation": [
+                                    0.0,
+                                    -89.99999237060547,
+                                    0.0
+                                ],
+                                "Fix Joint Location": false,
+                                "Parent Entity": "Entity_[1979456371692]",
+                                "Child Entity": "Entity_[2022406044652]",
+                                "Breakable": false,
+                                "Maximum Force": 1.0,
+                                "Maximum Torque": 1.0,
+                                "Display Debug": 1,
+                                "Select Lead on Snap": true,
+                                "Self Collide": false
+                            },
+                            "Angular Limit": {
+                                "Standard Limit Configuration": {
+                                    "Name": "",
+                                    "Is Limited": true,
+                                    "Is Soft Limit": false,
+                                    "Tolerance": 0.10000000149011612,
+                                    "Damping": 20.0,
+                                    "Stiffness": 100.0
+                                },
+                                "Positive Limit": 180.0,
+                                "Negative Limit": -180.0
+                            },
+                            "Motor": {
+                                "UseMotor": false,
+                                "ForceLimit": 1.0
+                            },
+                            "Component Mode": {}
+                        }
+                    }
+                },
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[2022406044652]/Components/ROS2FrameComponent/m_template/Namespace Configuration/Namespace Strategy",
+                    "value": 1
+                },
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[2022406044652]/Components/ROS2FrameComponent/m_template/Publish Transform",
+                    "value": false
+                },
+                {
+                    "op": "add",
+                    "path": "/Entities/Entity_[2022406044652]/Components/EditorArticulationLinkComponent",
+                    "value": {
+                        "$type": "EditorArticulationLinkComponent",
+                        "Id": 2953372472181450115,
+                        "ArticulationConfiguration": {
+                            "name": "",
+                            "position": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "orientation": [
+                                0.0,
+                                0.0,
+                                0.0,
+                                1.0
+                            ],
+                            "entityId": "",
+                            "startSimulationEnabled": true,
+                            "Fixed Base": false,
+                            "Self Collide": false,
+                            "Mass": 1.0,
+                            "Gravity Enabled": true,
+                            "Linear damping": 0.05000000074505806,
+                            "Angular damping": 0.15000000596046448,
+                            "Sleep threshold": 0.004999999888241291,
+                            "Start Asleep": false,
+                            "Centre of mass offset": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "Maximum Angular Velocity": 100.0,
+                            "SolverPositionIterations": 4,
+                            "SolverVelocityIterations": 1,
+                            "Articulation Joint Type": 1,
+                            "Local Position": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "Local Rotation": [
+                                0.0,
+                                -90.0,
+                                0.0
+                            ],
+                            "Fix Joint Location": false,
+                            "Auto-calculate Lead frame": true,
+                            "Lead Local Position": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "Lead Local Rotation": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "Display Joint Setup": 1,
+                            "Is Limited": true,
+                            "Linear Limit Lower": -1.0,
+                            "Linear Limit Upper": 1.0,
+                            "Angular Limit Negative": 180.0,
+                            "Angular Limit Positive": -180.0,
+                            "Motor configuration": {
+                                "UseMotor": true,
+                                "ForceLimit": 1000.0,
+                                "Stiffness": 2000.0,
+                                "Damping": 300.0
+                            },
+                            "Armature": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "Friction": 0.0,
+                            "Sensor Configurations": []
+                        }
+                    }
+                },
+                {
+                    "op": "remove",
+                    "path": "/Entities/Entity_[2022406044652]/Components/EditorHingeJointComponent"
+                },
+                {
+                    "op": "remove",
+                    "path": "/Entities/Entity_[2022406044652]/Components/EditorRigidBodyComponent"
+                }
+            ]
+        }
+    }
+}
