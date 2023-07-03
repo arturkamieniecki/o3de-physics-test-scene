@@ -20,7 +20,8 @@
                 "Id": 14126657869720434043,
                 "Child Entity Order": [
                     "Entity_[1176639161715]",
-                    "Instance_[1147111098351]/ContainerEntity"
+                    "Instance_[1147111098351]/ContainerEntity",
+                    "Entity_[1039454339336]"
                 ]
             },
             "Component_[15230859088967841193]": {
@@ -56,6 +57,65 @@
         }
     },
     "Entities": {
+        "Entity_[1039454339336]": {
+            "Id": "Entity_[1039454339336]",
+            "Name": "Entity1",
+            "Components": {
+                "EditorCameraComponent": {
+                    "$type": "{CA11DA46-29FF-4083-B5F6-E02C3A8C3A3D} EditorCameraComponent",
+                    "Id": 18033703551470768931
+                },
+                "EditorDisabledCompositionComponent": {
+                    "$type": "EditorDisabledCompositionComponent",
+                    "Id": 15675038152426376748
+                },
+                "EditorEntityIconComponent": {
+                    "$type": "EditorEntityIconComponent",
+                    "Id": 18271385702599742103
+                },
+                "EditorEntitySortComponent": {
+                    "$type": "EditorEntitySortComponent",
+                    "Id": 11614801507590427336
+                },
+                "EditorInspectorComponent": {
+                    "$type": "EditorInspectorComponent",
+                    "Id": 11388614056313671020
+                },
+                "EditorLockComponent": {
+                    "$type": "EditorLockComponent",
+                    "Id": 15692905186550689549
+                },
+                "EditorOnlyEntityComponent": {
+                    "$type": "EditorOnlyEntityComponent",
+                    "Id": 14030181398113243598
+                },
+                "EditorPendingCompositionComponent": {
+                    "$type": "EditorPendingCompositionComponent",
+                    "Id": 12697526036162445465
+                },
+                "EditorVisibilityComponent": {
+                    "$type": "EditorVisibilityComponent",
+                    "Id": 5229161697156541718
+                },
+                "TransformComponent": {
+                    "$type": "{27F1E1A1-8D9D-4C3B-BD3A-AFB9762449C0} TransformComponent",
+                    "Id": 10529897132897395029,
+                    "Parent Entity": "Entity_[1146574390643]",
+                    "Transform Data": {
+                        "Translate": [
+                            0.0,
+                            -1.2175464630126953,
+                            1.206383466720581
+                        ],
+                        "Rotate": [
+                            -32.15428161621094,
+                            0.8644461035728455,
+                            -1.3748327493667603
+                        ]
+                    }
+                }
+            }
+        },
         "Entity_[1155164325235]": {
             "Id": "Entity_[1155164325235]",
             "Name": "Sun",
@@ -232,7 +292,8 @@
                     "Id": 16880285896855930892,
                     "Controller": {
                         "Configuration": {
-                            "Field of View": 55.0
+                            "Field of View": 55.0,
+                            "MakeActiveViewOnActivation": false
                         }
                     }
                 },
@@ -255,9 +316,9 @@
                             1.0
                         ],
                         "Rotate": [
-                            -2.050307512283325,
-                            1.9552897214889526,
-                            -43.623355865478516
+                            -4.964685440063477,
+                            1.5077779293060303,
+                            -16.851835250854492
                         ]
                     }
                 },
@@ -1999,6 +2060,41 @@
                     "path": "/Entities/Entity_[1164290967535]/Components/EditorFixedJointComponent"
                 },
                 {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[1233010444271]/Components/EditorDisabledCompositionComponent/DisabledComponents",
+                    "value": {
+                        "ROS2RobotControlComponent": {
+                            "$type": "GenericComponentWrapper",
+                            "Id": 5958796147330969134,
+                            "m_template": {
+                                "$type": "ROS2RobotControlComponent",
+                                "Id": 0,
+                                "ControlConfiguration": {
+                                    "Steering": 0
+                                },
+                                "SubscriberConfiguration": {
+                                    "Type": "std_msgs::msg::Empty",
+                                    "Topic": "cmd_vel",
+                                    "QoS": {
+                                        "Reliability": 2,
+                                        "Durability": 2,
+                                        "Depth": 5
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "op": "replace",
+                    "path": "/Entities/Entity_[1233010444271]/Components/ROS2FrameComponent/m_template/Namespace Configuration/Namespace Strategy",
+                    "value": 1
+                },
+                {
+                    "op": "remove",
+                    "path": "/Entities/Entity_[1233010444271]/Components/ROS2RobotControlComponent"
+                },
+                {
                     "op": "add",
                     "path": "/Entities/Entity_[1190060771311]/Components/EditorArticulationLinkComponent",
                     "value": {
@@ -2455,41 +2551,6 @@
                     "path": "/Entities/Entity_[1211535607791]/Components/EditorRigidBodyComponent"
                 },
                 {
-                    "op": "replace",
-                    "path": "/Entities/Entity_[1233010444271]/Components/EditorDisabledCompositionComponent/DisabledComponents",
-                    "value": {
-                        "ROS2RobotControlComponent": {
-                            "$type": "GenericComponentWrapper",
-                            "Id": 5958796147330969134,
-                            "m_template": {
-                                "$type": "ROS2RobotControlComponent",
-                                "Id": 0,
-                                "ControlConfiguration": {
-                                    "Steering": 0
-                                },
-                                "SubscriberConfiguration": {
-                                    "Type": "std_msgs::msg::Empty",
-                                    "Topic": "cmd_vel",
-                                    "QoS": {
-                                        "Reliability": 2,
-                                        "Durability": 2,
-                                        "Depth": 5
-                                    }
-                                }
-                            }
-                        }
-                    }
-                },
-                {
-                    "op": "replace",
-                    "path": "/Entities/Entity_[1233010444271]/Components/ROS2FrameComponent/m_template/Namespace Configuration/Namespace Strategy",
-                    "value": 1
-                },
-                {
-                    "op": "remove",
-                    "path": "/Entities/Entity_[1233010444271]/Components/ROS2RobotControlComponent"
-                },
-                {
                     "op": "add",
                     "path": "/Entities/Entity_[1215830575087]/Components/EditorArticulationLinkComponent",
                     "value": {
@@ -2641,6 +2702,19 @@
                             "wrist_1_joint": 0.0,
                             "wrist_2_joint": 0.0,
                             "wrist_3_joint": 0.0
+                        }
+                    }
+                },
+                {
+                    "op": "add",
+                    "path": "/Entities/Entity_[1215830575087]/Components/JointsTrajectoryComponent",
+                    "value": {
+                        "$type": "GenericComponentWrapper",
+                        "Id": 14232996109849348123,
+                        "m_template": {
+                            "$type": "JointsTrajectoryComponent",
+                            "Id": 0,
+                            "Action name": "joint_trajectory_controller/follow_joint_trajectory"
                         }
                     }
                 },
